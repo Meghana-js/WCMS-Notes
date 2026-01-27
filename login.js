@@ -4,11 +4,12 @@ function login() {
 	var pass=document.getElementById("password").value;
 	
 	if(user=="wcms"&&pass=="wcms123") {
-		window.location.href="index.html";
+		window.location.href="home.html";
 }else{
 	
 	document.getElementById("error").innerHTML="Invalid Username or Password";
 }
 
 }
+
 
