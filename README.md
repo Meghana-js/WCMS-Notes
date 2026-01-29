@@ -6,6 +6,11 @@ This project is designed for learning and practicing basic web development conce
 Live Website:  
 https://meghana-js.github.io/WCMS-Notes/
 
+Use the following credentials to explore the website:
+
+Username: student
+Password: student123
+
 ---
 
 ## ✨ Features
