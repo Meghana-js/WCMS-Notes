@@ -8,8 +8,8 @@ https://meghana-js.github.io/WCMS-Notes/
 
 Use the following credentials to explore the website:
 
-Username: student
-Password: student123
+Username: wcms
+Password: wcms123
 
 ---
 
