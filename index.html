@@ -1,19 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Web CMS Notes - Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web-based CMS Notes application built using HTML, CSS, and JavaScript.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="login-box">
     <h2>Web CMS Notes</h2>
+    <p class="subtitle">Simple Web-Based Notes Management System</p>
 
-    <input type="text" id="username" placeholder="Username">
-    <input type="password" id="password" placeholder="Password">
+    <input type="text" id="username" placeholder="Username" required>
+    <input type="password" id="password" placeholder="Password" required>
 
     <button onclick="login()">Login</button>
+
+    <p class="demo-info">
+        Demo Credentials:<br>
+        Username: <strong>wcms</strong><br>
+        Password: <strong>wcms123</strong>
+    </p>
 
     <p id="error"></p>
 </div>
