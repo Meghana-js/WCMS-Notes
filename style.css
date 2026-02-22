@@ -1,11 +1,15 @@
-/* ===== RESET ===== */
+/* ============================= */
+/* ===== GLOBAL RESET ===== */
+/* ============================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ============================= */
 /* ===== BODY BACKGROUND ===== */
+/* ============================= */
 body {
     font-family: "Segoe UI", Arial, sans-serif;
     background: linear-gradient(135deg, #667eea, #764ba2);
@@ -13,7 +17,9 @@ body {
     color: #333;
 }
 
-/* ===== COMMON PAGE BOX (HOME + UNITS) ===== */
+/* ============================= */
+/* ===== COMMON PAGE BOX ===== */
+/* ============================= */
 .page-box {
     background: #ffffff;
     max-width: 900px;
@@ -21,16 +27,21 @@ body {
     padding: 25px;
     border-radius: 14px;
     box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+    animation: fadeIn 0.6s ease-in-out;
 }
 
+/* ============================= */
 /* ===== HEADINGS ===== */
+/* ============================= */
 h1, h2 {
     text-align: center;
     margin-bottom: 20px;
     color: #2d2d2d;
 }
 
-/* ===== LISTS ===== */
+/* ============================= */
+/* ===== LIST STYLING ===== */
+/* ============================= */
 ul {
     margin-top: 15px;
     padding-left: 25px;
@@ -42,7 +53,9 @@ li {
     line-height: 1.6;
 }
 
+/* ============================= */
 /* ===== LINKS AS BUTTONS ===== */
+/* ============================= */
 a {
     display: inline-block;
     margin-top: 15px;
@@ -52,15 +65,18 @@ a {
     text-decoration: none;
     border-radius: 8px;
     font-size: 15px;
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 a:hover {
     background: #5a67d8;
     transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
 
-/* ===== LOGIN PAGE ===== */
+/* ============================= */
+/* ===== LOGIN BOX ===== */
+/* ============================= */
 .login-box {
     background: white;
     width: 320px;
@@ -73,12 +89,16 @@ a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    animation: fadeIn 0.6s ease-in-out;
 }
 
 .login-box h2 {
     margin-bottom: 20px;
 }
 
+/* ============================= */
+/* ===== INPUT FIELDS ===== */
+/* ============================= */
 .login-box input {
     width: 100%;
     padding: 12px;
@@ -86,13 +106,18 @@ a:hover {
     border-radius: 8px;
     border: 1px solid #ccc;
     font-size: 14px;
+    transition: 0.3s ease;
 }
 
 .login-box input:focus {
     outline: none;
     border-color: #667eea;
+    box-shadow: 0 0 8px rgba(102, 126, 234, 0.5);
 }
 
+/* ============================= */
+/* ===== BUTTON ===== */
+/* ============================= */
 .login-box button {
     width: 100%;
     padding: 12px;
@@ -102,22 +127,48 @@ a:hover {
     border-radius: 8px;
     font-size: 16px;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 
 .login-box button:hover {
-    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
 
+/* ============================= */
+/* ===== ERROR MESSAGE ===== */
+/* ============================= */
 #error {
     color: red;
     margin-top: 10px;
+    font-size: 14px;
 }
 
+/* ============================= */
+/* ===== FADE ANIMATION ===== */
+/* ============================= */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ============================= */
 /* ===== MOBILE RESPONSIVE ===== */
+/* ============================= */
 @media (max-width: 600px) {
     .page-box {
         margin: 15px;
         padding: 18px;
+    }
+
+    .login-box {
+        width: 90%;
     }
 
     li {
